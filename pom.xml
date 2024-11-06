@@ -11,9 +11,9 @@
   <properties>
     <changelist>-SNAPSHOT</changelist>
     <functionAppName>aer_02-20241015142323079</functionAppName>
-    <java.version>11</java.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <java.version>21</java.version>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
     <metrics.version>4.2.8</metrics.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,6 +34,11 @@
       <version>3.1.0</version>
     </dependency>
     <!-- Relp connection -->
+    <dependency>
+      <groupId>cloud.piranha</groupId>
+      <artifactId>piranha-embedded</artifactId>
+      <version>24.10.0</version>
+    </dependency>
     <dependency>
       <groupId>com.teragrep</groupId>
       <artifactId>rlp_01</artifactId>
@@ -483,7 +488,7 @@
                   <version>3.2.5</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
-                  <version>[11,12)</version>
+                  <version>[21,22)</version>
                 </requireJavaVersion>
                 <banDynamicVersions></banDynamicVersions>
                 <requirePluginVersions>
